@@ -1,0 +1,33 @@
+/* Media query for larger screens - larger.css equivalent */
+@media (min-width: 640px) {
+    #menuButton {
+        display: none;
+    }
+    
+    #navigation {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #navigation li {
+        border-bottom: none;
+    }
+    
+    .about-content {
+        flex-direction: row;
+    }
+    
+    .about-content img {
+        max-width: 300px;
+    }
+    
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
