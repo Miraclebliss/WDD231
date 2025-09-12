@@ -1,0 +1,48 @@
+{
+    "fn": "Iruka Family",
+    "date": "2024-06-20",
+    "nor": 6,
+    "visited": "true",
+    "Family Members": [
+        { 
+            "name": "Iruka Veronica",
+            "gender": "female",
+            "birthdate": "1977-07-07"
+        },
+        { 
+            "name": "Amaka Iruka",
+            "gender": "female",
+            "birthdate": "1992-07-06"
+        },
+        { 
+            "name": "Oluchi Iruka",
+            "gender": "female",
+            "birthdate": "1994-16-06"
+        },
+        { 
+            "name": "Blessing Iruka",
+            "gender": "female",
+            "birthdate": "1996-08-02"
+        },
+        { 
+            "name": "Gift Iruka",
+            "gender": "female",
+            "birthdate": "1998-03-16"
+        },
+        { 
+            "name": "Miracle Iruka",
+            "gender": "female",
+            "birthdate": "2000-05-16"
+        },
+        { 
+            "name": "Monday Iruka",
+            "gender": "male",
+            "birthdate": "2002-03-17"
+        },
+        { 
+            "name": "Amara Iruka",
+            "gender": "female",
+            "birthdate": "2003-12-04"
+        }
+    ]
+}
