@@ -1,0 +1,15 @@
+/* Medium screens: tablets and small laptops
+@media (min-width: 600px) {
+  nav ul {
+    gap: 2rem;
+  }
+
+  .member-card {
+    text-align: left;
+  }
+
+  .member-card img {
+    float: left;
+    margin-right: 1rem;
+  }
+} */

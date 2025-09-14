@@ -1,0 +1,93 @@
+[
+  {
+    "name": "The Good Bean Cafe",
+    "address": "123 Main St, Milagro, CA 94555",
+    "phone": "(555) 123-4567",
+    "websiteURL": "https://www.bing.com/ck/a?!&&p=c25730c20977dba5bfd2862e21e090d7aea363bc98c2d137e5bcba4ac23ee98bJmltdHM9MTc1NzcyMTYwMA&ptn=3&ver=2&hsh=4&fclid=06671991-c9c3-6668-11cb-0c0bc8e86778&psq=image+of+good+bean+cafe&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9nb29kYmVhbnMuY2FmZS8",
+    "imageURL": "images/goodbeancafe.webp",
+    "industry": "food",
+    "membershipLevel": 3,
+    "other": {
+      "slogan": "Coffee with a Conscience.",
+      "commitments": ["Pays Living Wage", "Full Health Benefits", "Organic & Fair Trade Sourcing"]
+    }
+  },
+  {
+    "name": "Apex Technology Solutions",
+    "address": "456 Innovation Dr, Milagro, CA 94555",
+    "phone": "(555) 987-6543",
+    "websiteURL": "https://https://shorturl.at/rpd8h",
+    "imageURL": "images/apextechnology.webp",
+    "industry": "tech",
+    "membershipLevel": 2,
+    "other": {
+      "slogan": "Building the future, ethically.",
+      "commitments": ["Blind Recruitment Process", "Pay Transparency", "Professional Development Fund"]
+    }
+  },
+  {
+    "name": "GreenScape Landscaping",
+    "address": "789 Oak Ave, Milagro, CA 94555",
+    "phone": "(555) 456-7890",
+    "websiteURL": "https://nigeria24.me/hasam-enterprises-ltd?utm_source=greenscape-tech-limited",
+    "imageURL": "images/greenlandscape.webp",
+    "industry": "construction",
+    "membershipLevel": 1,
+    "other": {
+      "slogan": "Beautiful landscapes, beautiful practices.",
+      "commitments": ["Safety First Certification", "Eco-Friendly Practices", "ESL Training Provided"]
+    }
+  },
+  {
+    "name": "Milagro Community Health",
+    "address": "3742 Whittier Blvd, Los Angeles, CA 90023",
+    "phone/Email": "contact@milagrocare.icu",
+    "websiteURL": "https://milagrocare.icu/",
+    "imageURL": "images/milagrohealth.webp",
+    "industry": "health",
+    "membershipLevel": 3,
+    "other": {
+      "slogan": "Caring for our community, inside and out.",
+      "commitments": ["Mental Health Support", "Flexible Scheduling", "Community Health Education"]
+    }
+  },
+  {
+    "name": "Threads of Justice Apparel",
+    "address": "222 Fashion Ave, Milagro, CA 94555",
+    "phone": "(555) 369-1214",
+    "websiteURL": "https://www.instagram.com/p/CyjH1sCRfZV/",
+    "imageURL": "images/threadsofjustice.webp",
+    "industry": "retail",
+    "membershipLevel": 2,
+    "other": {
+      "slogan": "Wear your values.",
+      "commitments": ["Ethical Supply Chain", "Living Wage Guarantee", "Local Artisan Support"]
+    }
+  },
+  {
+    "name": "Future Minds Academy",
+    "address": "333 Education Blvd, Milagro, CA 94555",
+    "phone": "(555) 802-4680",
+    "websiteURL": "https://futureminds.io/",
+    "imageURL": "images/futuremindsacademy.webp",
+    "industry": "education",
+    "membershipLevel": 3,
+    "other": {
+      "slogan": "Educating for a more equitable future.",
+      "commitments": ["Scholarship Programs", "Diverse Faculty", "Inclusive Curriculum"]
+    }
+  },
+  {
+    "name": "Max-Migold Ltd",
+    "address": "HRDC Building University of Lagos, Akoka, Yaba, Lagos",
+    "phone": "08022020122",
+    "websiteURL": "https://www.maxmigold.com",
+    "imageURL": "images/maxmigold.webp",
+    "industry": "Education and Services",
+    "membershipLevel": 3,
+    "other": {
+      "slogan": "Leading Physical Facility Solution Provider.",
+      "commitments": ["Local Sourcing", "Zero-Waste Initiatives", "Employee Ownership Program"]
+    }
+  }
+]

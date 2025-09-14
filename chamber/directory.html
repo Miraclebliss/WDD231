@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory | Milagro Chamber of Commerce</title>
+    <meta name="description" content="Discover ethical businesses in Milagro that support fair wages, safe working conditions, and inclusive hiring practices.">
+    <meta name="author" content="Your Name">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Milagro Chamber of Commerce - Ethical Business Directory">
+    <meta property="og:description" content="Discover businesses in Milagro that support fair wages, safe working conditions, and inclusive hiring.">
+    <meta property="og:image" content="https://example.com/images/milagro-social-preview.jpg">
+    <meta property="og:url" content="https://example.com/directory.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+   
+    <!-- JavaScript -->
+    <script src="scripts/directory.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.png" alt="Milagro Chamber of Commerce Logo" width="80" height="80">
+                </a>
+            </div>
+            
+            <nav>
+                <button id="hamburger-btn">&#9776;</button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="social">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook" width="30" height="30">
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" width="30" height="30">
+                </a>
+                <a href="https://instagram.com" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="Instagram" width="30" height="30">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="directory-main">
+        <h1>Business Directory</h1>
+        <p class="directory-intro">Discover Milagro businesses committed to ethical employment practices, including fair wages, safe working conditions, and inclusive hiring.</p>
+        
+        <div class="view-options">
+            <button id="grid-view" class="active" aria-label="Grid View">Grid</button>
+            <button id="list-view" aria-label="List View">List</button>
+        </div>
+        
+        <div class="filters">
+            <select id="membership-filter">
+                <option value="all">All Members</option>
+                <option value="3">Gold Members</option>
+                <option value="2">Silver Members</option>
+                <option value="1">Members</option>
+            </select>
+            
+            <select id="industry-filter">
+                <option value="all">All Industries</option>
+                <option value="food">Food & Hospitality</option>
+                <option value="tech">Technology</option>
+                <option value="retail">Retail</option>
+                <option value="health">Health & Wellness</option>
+                <option value="construction">Construction</option>
+                <option value="education">Education</option>
+                <option value="finance">Finance</option>
+                <option value="arts">Arts & Culture</option>
+                <oprion value="services">Professional Services</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <div id="member-cards" class="cards-grid">
+            <!-- Member cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <div class="footer-logo">
+                    <img src="images/Logo.png" alt="Milagro Chamber of Commerce" width="60" height="60">
+                </div>
+                <div class="contact-info">
+                    <p>35 Araromi Street, Onike Yaba</p>
+                    <p>claramiracle047@gmail.com</p>
+                    <p>07036310477</p>
+                </div>
+                <div class="map-link">
+                    <a href="#">📍 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31712.5667138395!2d3.3847490000000002!3d6.512718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cf0b0d17593%3A0xe24227f4fdc8bc40!2s35%20Araromi%20St%2C%20Onike%2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1757837306466!5m2!1sen!2sng" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+                </div>
+            </div>
+            
+            <div class="footer-base">
+                <p>&copy; <span id="currentyear"></span> Milagro Chamber of Commerce</p>
+                <p>Iruka Nkechi Miracle | WDD 231 Project</p>
+                <p>Last Modification: <span id="lastmodified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
