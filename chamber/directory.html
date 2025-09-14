@@ -121,9 +121,15 @@
             <div class="footer-base">
                 <p>&copy; <span id="currentyear"></span> Milagro Chamber of Commerce</p>
                 <p>Iruka Nkechi Miracle | WDD 231 Project</p>
-                <p>Last Modification: <span id="lastmodified"></span></p>
+                <p>Last Modification: <span id="lastModified"></span></p>
             </div>
         </div>
     </footer>
+    <!-- JavaScript -->
+    <script>
+        // Auto-update year and last modified date
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
 </body>
 </html>
