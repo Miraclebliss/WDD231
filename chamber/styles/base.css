@@ -142,7 +142,7 @@ nav a.active {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: var(--transition);
+    /* transition: var(--transition); */
     border: none;
     text-align: center;
 }
@@ -162,7 +162,7 @@ nav a.active {
     padding: 0.5rem 1rem;
     background-color: var(--gray-light);
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-weight: 600;
 }
 
@@ -348,7 +348,7 @@ nav a.active {
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
 }
         
 .mission-image img {
@@ -369,7 +369,7 @@ nav a.active {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    /* transition: transform 0.3s, box-shadow 0.3s; */
 }
 
 .member-card:hover {
@@ -388,8 +388,8 @@ nav a.active {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
+    /* box-shadow: var(--box-shadow);
+    transition: var(--transition); */
 }
         
 .member-card:hover {
@@ -405,7 +405,7 @@ nav a.active {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
+    /* transition: var(--transition); */
 }
         
 .member-card:hover .member-image img {
@@ -422,7 +422,7 @@ nav a.active {
 }
         
 .member-industry {
-    color: var(--gray-color);
+    /* color: var(--gray-color); */
     font-style: italic;
     margin-bottom: 1rem;
 }
@@ -432,9 +432,9 @@ nav a.active {
 }
 
 /* Events Section */
-.events {
+/* .events {
     background-color: var(--light-color);
-}
+} */
 
 .events-container {
     display: grid;
@@ -446,7 +446,7 @@ nav a.active {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
 }
 
 .event-date {
@@ -468,7 +468,7 @@ nav a.active {
 
 .event-details {
     margin-bottom: 1.5rem;
-    color: var(--gray-color);
+    /* color: var(--gray-color); */
 }
 
 /* News Section */
@@ -482,7 +482,7 @@ nav a.active {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
 }
 
 .news-image {
@@ -506,7 +506,7 @@ nav a.active {
 }
 
 .news-date {
-    color: var(--gray-color);
+    /* color: var(--gray-color); */
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
@@ -699,7 +699,7 @@ footer {
 
 .footer-links a {
     color: #ddd;
-    transition: var(--transition);
+    /* transition: var(--transition); */
 }
 
 .footer-links a:hover {
@@ -728,7 +728,7 @@ footer {
     color: white;
     border: none;
     border-radius: 0 50px 50px 0;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .footer-base {
@@ -883,11 +883,11 @@ footer {
 }
 
 .spotlight-card {
-    background-color: var(--light);
-    border-radius: var(--radius);
+    /* background-color: var(--light);
+    border-radius: var(--radius); */
     padding: 1.5rem;
     text-align: center;
-    transition: transform 0.3s;
+    /* transition: transform 0.3s; */
 }
 
 .spotlight-card:hover {
@@ -915,8 +915,8 @@ footer {
 .spotlight-level {
     display: inline-block;
     background-color: var(--secondary);
-    color: var(--dark);
-    padding: 0.25rem 0.75rem;
+    /* color: var(--dark); */
+    /* padding: 0.25rem 0.75rem; */
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -1004,7 +1004,7 @@ footer {
 .membership-option {
     display: flex;
     align-items: center;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .membership-option input {
@@ -1019,7 +1019,7 @@ footer {
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 100%;
 }
 
@@ -1042,7 +1042,7 @@ footer {
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.6s ease;
+    /* transition: all 0.6s ease; */
 }
 
 .membership-card.animate-in {
@@ -1110,7 +1110,7 @@ footer {
     right: 1rem;
     top: 1rem;
     font-size: 2rem;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 /* Additional Sections */
@@ -1157,7 +1157,7 @@ details {
 
 summary {
     font-weight: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 0.5rem 0;
 }
 
@@ -1219,7 +1219,7 @@ details p {
     margin-right: 1rem;
     font-size: 2.5rem;
     box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
-    animation: bounceIn 0.8s ease-out;
+    /* animation: bounceIn 0.8s ease-out; */
 }
 
 @keyframes bounceIn {
@@ -1241,9 +1241,9 @@ details p {
     margin-bottom: 2rem;
     font-size: 1.8rem;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    /* background-clip: text; */
 }
 
 .application-summary {
@@ -1298,7 +1298,7 @@ details p {
     font-size: 1.1rem;
     color: #555;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
+    /* transition: transform 0.2s ease; */
 }
 
 #applicationData dd:hover {
@@ -1355,7 +1355,7 @@ details p {
     border-radius: 50px;
     font-size: 1.1rem;
     font-weight: 600;
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
     box-shadow: 0 5px 15px rgba(44, 90, 160, 0.3);
 }
 
@@ -1366,17 +1366,17 @@ details p {
 
 .print-btn {
     display: inline-block;
-    background: linear-gradient(var(--radius));
+    /* background: linear-gradient(var(--radius)); */
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 50px;
     font-size: 1.1rem;
     font-weight: 600;
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
     box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .print-btn:hover {
@@ -1432,8 +1432,4 @@ details p {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.thankyou-container {
-    animation: slideIn 0.8s ease-out;
 }
