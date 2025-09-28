@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thank You - Chamber of Commerce</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Milagro Chamber of Commerce Logo">
+                    </a>
+                </div>
+
+                <nav>
+                    <button id="hamburger-btn">&#9776;</button>
+                    <ul id="primary-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="social">
+                    <a href="https://facebook.com" aria-label="Facebook">
+                        <img src="images/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn">
+                        <img src="images/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://instagram.com" aria-label="Instagram">
+                        <img src="images/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="thankyou-main">
+            <div class="thankyou-container">
+                <h1>Thank You for Your Application!</h1>
+                <div class="application-summary">
+                    <h2>Application Received</h2>
+                    <div id="applicationData">
+                        <!-- Data will be populated by JavaScript -->
+                    </div>
+                </div>
+                <p>We'll review your application and contact you within 2-3 business days.</p>
+                <a href="index.html" class="back-home">Return to Homepage</a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-contact">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="Milagro Chamber of Commerce">
+                        </div>
+                        <p>35 Araromi Street, Onike Yaba</p>
+                        <p>info@milagrochamber.org</p>
+                        <p>(555) 901-2345</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="discover.html">Discover</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li><a href="join.html">Join</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="map-link">
+                        <div class="map-link">
+                            <a href="#">📍 Location</a>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31712.5667138395!2d3.3847490000000002!3d6.512718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cf0b0d17593%3A0xe24227f4fdc8bc40!2s35%20Araromi%20St%2C%20Onike%2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1757837306466!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h3>Stay Informed</h3>
+                        <p>Subscribe to our newsletter for updates on ethical business practices and community events.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-base">
+                    <p>&copy; <span id="currentyear"></span> Milagro Chamber of Commerce</p>
+                    <p>Iruka Nkechi Miracle | WDD 231 Project</p>
+                    <p>Last Modification: <span id="lastModified"></span></p>
+                </div>
+            </div>
+        </footer>
+        <!-- JavaScript -->
+        <script>
+            // Auto-update year and last modified date
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>
+    </body>
+</html>

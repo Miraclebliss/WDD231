@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Join | Milagro Chamber of Commerce</title>
+        <meta name="description" content="Join our Chamber of Commerce and access exclusive benefits for your business. Choose from NP, Bronze, Silver, or Gold membership levels.">
+        <meta name="author" content="Iruka Nkechi Miracle">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:title" content="Milagro Chamber of Commerce - Ethical Business Directory">
+        <meta property="og:description"
+            content="Discover businesses in Milagro that support fair wages, safe working conditions, and inclusive hiring.">
+        <meta property="og:image" content="https://miraclebliss.github.io/wdd231/chamber/images/logo.png">
+        <meta property="og:url" content="https://miraclebliss.github.io/wdd231/chamber/directory.html">
+        <meta property="og:type" content="website">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+
+        <!-- JavaScript -->
+        <script src="scripts/index.js"></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Milagro Chamber of Commerce Logo">
+                    </a>
+                </div>
+
+                <nav>
+                    <button id="hamburger-btn">&#9776;</button>
+                    <ul id="primary-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="social">
+                    <a href="https://facebook.com" aria-label="Facebook">
+                        <img src="images/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn">
+                        <img src="images/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://instagram.com" aria-label="Instagram">
+                        <img src="images/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="join-main">
+            <h1>Join Our Chamber of Commerce</h1>
+            
+            <div class="join-container">
+                <!-- Application Form -->
+                <section class="application-form">
+                    <h2>Membership Application</h2>
+                    <form method="get" action="thankyou.html" id="joinForm">
+                        <!-- Personal Information -->
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            
+                            <label for="firstName">
+                                First Name *
+                                <input type="text" id="firstName" name="firstName" required 
+                                    title="Enter your first name" autocomplete="given-name">
+                            </label>
+                            
+                            <label for="lastName">
+                                Last Name *
+                                <input type="text" id="lastName" name="lastName" required 
+                                    title="Enter your last name" autocomplete="family-name">
+                            </label>
+                            
+                            <label for="title">
+                                Organizational Title
+                                <input type="text" id="title" name="title" 
+                                    title="Enter your title within the organization" 
+                                    autocomplete="organization-title"
+                                    pattern="[A-Za-z\s\-]{7,}" 
+                                    placeholder="e.g., Marketing Director">
+                                <small>Minimum 7 characters, letters, spaces, and hyphens only</small>
+                            </label>
+                        </fieldset>
+
+                        <!-- Contact Information -->
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            
+                            <label for="email">
+                                Email Address *
+                                <input type="email" id="email" name="email" required 
+                                    title="Enter your email address" autocomplete="email"
+                                    placeholder="yourname@example.com">
+                            </label>
+                            
+                            <label for="phone">
+                                Mobile Phone *
+                                <input type="tel" id="phone" name="phone" required 
+                                    title="Enter your mobile phone number" autocomplete="tel">
+                            </label>
+                        </fieldset>
+
+                        <!-- Business Information -->
+                        <fieldset>
+                            <legend>Business Information</legend>
+                            
+                            <label for="businessName">
+                                Business/Organization Name *
+                                <input type="text" id="businessName" name="businessName" required 
+                                    title="Enter your business or organization name" 
+                                    autocomplete="organization">
+                            </label>
+                            
+                            <label for="description">
+                                Business Description
+                                <textarea id="description" name="description" 
+                                        title="Describe your business or organization"></textarea>
+                            </label>
+                        </fieldset>
+
+                        <!-- Membership Level -->
+                        <fieldset>
+                            <legend>Membership Level</legend>
+                            <div class="membership-options">
+                                <label class="membership-option">
+                                    <input type="radio" name="membership" value="np" required>
+                                    <span class="radio-custom"></span>
+                                    NP Membership (Non-Profit)
+                                </label>
+                                
+                                <label class="membership-option">
+                                    <input type="radio" name="membership" value="bronze" required>
+                                    <span class="radio-custom"></span>
+                                    Bronze Membership
+                                </label>
+                                
+                                <label class="membership-option">
+                                    <input type="radio" name="membership" value="silver" required>
+                                    <span class="radio-custom"></span>
+                                    Silver Membership
+                                </label>
+                                
+                                <label class="membership-option">
+                                    <input type="radio" name="membership" value="gold" required>
+                                    <span class="radio-custom"></span>
+                                    Gold Membership
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Hidden Timestamp -->
+                        <input type="hidden" id="timestamp" name="timestamp">
+
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                    </form>
+                </section>
+
+                <!-- Membership Cards -->
+                <section class="membership-cards">
+                    <h2>Membership Levels</h2>
+                    <div class="cards-container">
+                        <div class="membership-card np-card">
+                            <h3>NP Membership</h3>
+                            <p class="price">Free</p>
+                            <p>For non-profit organizations</p>
+                            <a href="#np-modal" class="info-link" data-modal="np-modal">View Benefits</a>
+                        </div>
+                        
+                        <div class="membership-card bronze-card">
+                            <h3>Bronze Membership</h3>
+                            <p class="price">$250/year</p>
+                            <p>Essential business benefits</p>
+                            <a href="#bronze-modal" class="info-link" data-modal="bronze-modal">View Benefits</a>
+                        </div>
+                        
+                        <div class="membership-card silver-card">
+                            <h3>Silver Membership</h3>
+                            <p class="price">$500/year</p>
+                            <p>Enhanced networking opportunities</p>
+                            <a href="#silver-modal" class="info-link" data-modal="silver-modal">View Benefits</a>
+                        </div>
+                        
+                        <div class="membership-card gold-card">
+                            <h3>Gold Membership</h3>
+                            <p class="price">$1,000/year</p>
+                            <p>Premium business advantages</p>
+                            <a href="#gold-modal" class="info-link" data-modal="gold-modal">View Benefits</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Membership Requirements -->
+            <section class="requirements">
+                <h2>Membership Requirements</h2>
+                <ul>
+                    <li>Valid business license or non-profit status</li>
+                    <li>Business must be located within our service area</li>
+                    <li>Agreement to abide by chamber bylaws</li>
+                    <li>Current contact information</li>
+                </ul>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonials">
+                <h2>What Our Members Say</h2>
+                <div class="testimonial-grid">
+                    <blockquote>
+                        "Joining the chamber transformed our business network. The connections we've made are invaluable."
+                        <cite>- Sarah Johnson, Apex Tech Solutions Inc.</cite>
+                    </blockquote>
+                    <blockquote>
+                        "As a non-profit, the NP membership has given us visibility we couldn't achieve on our own."
+                        <cite>- Michael Chen, Milagro Community Outreach</cite>
+                    </blockquote>
+                    <blockquote>
+                        "The Gold membership pays for itself with just one major contract. Highly recommended!"
+                        <cite>- Emily Rodriguez, creative Designs</cite>
+                    </blockquote>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <details>
+                        <summary>How long does the application process take?</summary>
+                        <p>Most applications are processed within 2-3 business days. You'll receive a welcome email once approved.</p>
+                    </details>
+                    
+                    <details>
+                        <summary>Can I upgrade my membership later?</summary>
+                        <p>Yes! You can upgrade at any time. The prorated difference will be applied to your new membership level.</p>
+                    </details>
+                    
+                    <details>
+                        <summary>Is there a discount for multiple businesses?</summary>
+                        <p>We offer a 10% discount for each additional business under the same ownership.</p>
+                    </details>
+                    
+                    <details>
+                        <summary>What payment methods do you accept?</summary>
+                        <p>We accept credit cards, debit cards, and bank transfers. Annual payments receive a 5% discount.</p>
+                    </details>
+                </div>
+            </section>
+        </main>
+
+        <!-- Membership Benefit Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>Free basic listing in our directory</li>
+                    <li>Access to monthly networking events</li>
+                    <li>Weekly newsletter subscription</li>
+                    <li>Social media mentions</li>
+                    <li>Community resource access</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>All NP benefits plus:</li>
+                    <li>Enhanced directory listing</li>
+                    <li>10% discount on chamber events</li>
+                    <li>Business training workshops</li>
+                    <li>Quarterly business spotlight opportunity</li>
+                    <li>Access to business resources</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>All Bronze benefits plus:</li>
+                    <li>20% discount on chamber events</li>
+                    <li>Priority event registration</li>
+                    <li>Monthly business spotlight</li>
+                    <li>Professional development sessions</li>
+                    <li>Member-to-member discounts</li>
+                    <li>Committee participation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>All Silver benefits plus:</li>
+                    <li>30% discount on chamber events</li>
+                    <li>VIP event access</li>
+                    <li>Weekly business spotlight</li>
+                    <li>Executive networking events</li>
+                    <li>Featured on homepage</li>
+                    <li>Board committee opportunities</li>
+                    <li>Dedicated account manager</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-contact">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="Milagro Chamber of Commerce">
+                        </div>
+                        <p>35 Araromi Street, Onike Yaba</p>
+                        <p>info@milagrochamber.org</p>
+                        <p>(555) 901-2345</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="discover.html">Discover</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li><a href="join.html">Join</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="map-link">
+                        <div class="map-link">
+                            <a href="#">📍 Location</a>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31712.5667138395!2d3.3847490000000002!3d6.512718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cf0b0d17593%3A0xe24227f4fdc8bc40!2s35%20Araromi%20St%2C%20Onike%2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1757837306466!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h3>Stay Informed</h3>
+                        <p>Subscribe to our newsletter for updates on ethical business practices and community events.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-base">
+                    <p>&copy; <span id="currentyear"></span> Milagro Chamber of Commerce</p>
+                    <p>Iruka Nkechi Miracle | WDD 231 Project</p>
+                    <p>Last Modification: <span id="lastModified"></span></p>
+                </div>
+            </div>
+        </footer>
+        <!-- JavaScript -->
+        <script>
+            // Auto-update year and last modified date
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>
+    </body>
+</html>

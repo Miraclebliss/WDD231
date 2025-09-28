@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Milagro Chamber of Commerce</title>
+    <meta name="description"
+        content="Join the Milagro Chamber of Commerce to support ethical businesses that prioritize fair wages, safe working conditions, and inclusive hiring practices.">
+    <meta name="author" content="Iruka Nkechi Miracle">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Milagro Chamber of Commerce - Ethical Business Directory">
+    <meta property="og:description"
+        content="Discover businesses in Milagro that support fair wages, safe working conditions, and inclusive hiring.">
+    <meta property="og:image" content="https://miraclebliss.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://miraclebliss.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+
+    <!-- JavaScript -->
+    <script src="scripts/index.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Milagro Chamber of Commerce Logo">
+                </a>
+            </div>
+
+            <nav>
+                <button id="hamburger-btn">&#9776;</button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="social">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://instagram.com" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Building an Ethical Business Community</h1>
+                <p>Join the Milagro Chamber of Commerce to support businesses that prioritize fair wages, safe working
+                    conditions, and inclusive hiring practices.</p>
+                <div class="hero-buttons">
+                    <a href="join.html" class="btn">Join Us Today</a>
+                    <a href="directory.html" class="btn">Find Ethical Businesses</a>
+                </div>
+            </div>
+        </section>
+        <!-- Mission -->
+        <section class="section mission">
+            <div class="container mission-content">
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p>The Milagro Chamber of Commerce is dedicated to promoting and supporting businesses in our region
+                        that are committed to ethical employment practices. We believe that businesses thrive when they
+                        invest in their employees and communities.</p>
+                    <p>Our mission is to create a network of businesses that prioritize:</p>
+                    <ul>
+                        <li>Fair living wages for all employees</li>
+                        <li>Safe and healthy working conditions</li>
+                        <li>Inclusive hiring and advancement practices</li>
+                        <li>Community investment and development</li>
+                        <li>Environmental sustainability</li>
+                    </ul>
+                    <p>By joining forces, we can create a more equitable and prosperous community for all.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="images/mission.png" alt="Team meeting at Milagro Chamber of Commerce">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Members Section -->
+        <!-- Member Spotlights Section -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Member Spotlights</h2>
+                <button onclick="getMembersfiltered()" class="btn btn-secondary">View All Members</button>
+            </div>
+            <div id="spotlights" class="spotlights">
+                <div id="member-cards" class="cards-grid">
+                    <!-- Member cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+        <!--Event-->
+        <section class="section events">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Upcoming Events</h2>
+                    <p>Join us for these upcoming events focused on ethical business practices</p>
+                </div>
+                <div class="events-container">
+                    <div class="event-card">
+                        <div class="event-date">May 15, 2026 | 6:00 PM</div>
+                        <div class="event-info">
+                            <h3 class="event-title">Fair Wage Workshop</h3>
+                            <p class="event-details">Learn how to implement fair wage practices in your business while
+                                maintaining profitability.</p>
+                            <a href="#" class="btn">Register Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">May 22, 2026 | 5:30 PM</div>
+                        <div class="event-info">
+                            <h3 class="event-title">Inclusive Hiring Panel</h3>
+                            <p class="event-details">Hear from business leaders who have successfully implemented
+                                inclusive hiring practices.</p>
+                            <a href="#" class="btn">Register Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">June 7, 2026 | 9:00 AM</div>
+                        <div class="event-info">
+                            <h3 class="event-title">Annual Ethical Business Awards</h3>
+                            <p class="event-details">Celebrate businesses that have demonstrated exceptional commitment
+                                to ethical practices.</p>
+                            <a href="#" class="btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Latest News</h2>
+                    <p>Stay updated with the latest news from our community</p>
+                </div>
+                <div class="news-container">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/business.png" alt="Business meeting">
+                        </div>
+                        <div class="news-info">
+                            <p class="news-date">May 28, 2023</p>
+                            <h3 class="news-title">New Initiative Supports Local Businesses</h3>
+                            <p>The Chamber has launched a new program to help small businesses implement ethical
+                                employment practices.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/awards.png" alt="Business awards">
+                        </div>
+                        <div class="news-info">
+                            <p class="news-date">May 15, 2023</p>
+                            <h3 class="news-title">2023 Ethical Business Awards Open</h3>
+                            <p>Nominations are now open for our annual awards recognizing businesses with outstanding
+                                ethical practices.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/event.png" alt="Community event">
+                        </div>
+                        <div class="news-info">
+                            <p class="news-date">April 30, 2023</p>
+                            <h3 class="news-title">Milagro Businesses See 20% Growth</h3>
+                            <p>Ethical businesses in our region are outperforming competitors, according to a new
+                                economic study.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section stats">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Impact</h2>
+                    <p>The Milagro Chamber of Commerce is making a difference in our community</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">215</div>
+                        <div class="stat-label">Member Businesses</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number">94%</div>
+                        <div class="stat-label">Pay Living Wages</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number">1,200+</div>
+                        <div class="stat-label">Jobs Created</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number">$3.2M</div>
+                        <div class="stat-label">Community Investment</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Join Our Community</h2>
+                    <p>Become part of a network that values people, planet, and prosperity</p>
+                </div>
+                <p>When you join the Milagro Chamber of Commerce, you're not just growing your business—you're helping
+                    to build a more ethical and sustainable local economy.</p>
+                <a href="join.html" class="btn">Become a Member Today</a>
+            </div>
+        </section>
+
+        <!--Weather-->
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <div class="card">
+                <h2 id="city"></h2>
+                <img id="icon" src="" alt="Weather-Icon">
+                <p id="description"></p>
+                <p id="temperature"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Milagro Chamber of Commerce">
+                    </div>
+                    <p>35 Araromi Street, Onike Yaba</p>
+                    <p>info@milagrochamber.org</p>
+                    <p>(555) 901-2345</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="map-link">
+                    <div class="map-link">
+                        <a href="#">📍 Location</a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31712.5667138395!2d3.3847490000000002!3d6.512718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cf0b0d17593%3A0xe24227f4fdc8bc40!2s35%20Araromi%20St%2C%20Onike%2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1757837306466!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Stay Informed</h3>
+                    <p>Subscribe to our newsletter for updates on ethical business practices and community events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-base">
+                <p>&copy; <span id="currentyear"></span> Milagro Chamber of Commerce</p>
+                <p>Iruka Nkechi Miracle | WDD 231 Project</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+        // Auto-update year and last modified date
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
