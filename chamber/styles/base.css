@@ -637,17 +637,17 @@ nav a.active {
 }
 .card h2{
     color: var(--primary-color);
-    margin: 3rem, 0;
+    margin: 3rem 0;
 }
 .card #description{
     text-transform: capitalize;
     color:#333333;
-    margin: 3rem, 0;
+    margin: 3rem 0;
 }
 .card #temperature{
     font-size: 24px;
     color: #333333;
-    margin: 3rem, 0;
+    margin: 3rem 0;
     font-weight: 800;
     
 }
@@ -1250,7 +1250,7 @@ details p {
 }
 
 .application-summary {
-    background: linear-gradient(var(--background-light) 100%);
+   background: linear-gradient(to right, #ffffff, #000000);
     padding: 2.5rem;
     border-radius: 15px;
     margin: 2.5rem 0;
@@ -1351,7 +1351,7 @@ details p {
 
 .back-home {
     display: inline-block;
-    background: linear-gradient(var(--primary-color));
+    background: linear-gradient(to right, #ffffff, #000000);
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
