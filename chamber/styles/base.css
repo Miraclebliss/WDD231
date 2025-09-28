@@ -914,7 +914,7 @@ footer {
 
 .spotlight-level {
     display: inline-block;
-    background-color: var(--secondary);
+    /* background-color: var(--secondary); */
     /* color: var(--dark); */
     /* padding: 0.25rem 0.75rem; */
     border-radius: 20px;
@@ -1242,7 +1242,7 @@ details p {
     font-size: 1.8rem;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     /* -webkit-background-clip: text; */
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     /* background-clip: text; */
 }
 
