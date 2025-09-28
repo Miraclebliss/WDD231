@@ -1210,7 +1210,8 @@ details p {
 .thankyou-container h2 {
     color: var(--secondary-color);
     margin-bottom: 2rem;
-    font-size: 1.8rem;
+    font-size: 3rem;
+    text-align: center;
     background: var(--primary-color);
 }
 
