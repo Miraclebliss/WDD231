@@ -1272,7 +1272,7 @@ details p {
     transform: translateX(5px);
 }
 
-/* Next Steps Section */
+/* Next Steps Section styles*/
 .next-steps {
     background: #e8f4f8;
     padding: 1.5rem;
@@ -1304,7 +1304,7 @@ details p {
     margin-right: 0.5rem;
 }
 
-/* Action Buttons */
+/* Action Buttons styles */
 .action-buttons {
     display: flex;
     gap: 1rem;
