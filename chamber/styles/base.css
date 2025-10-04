@@ -1397,3 +1397,299 @@ details p {
         transform: translateY(0);
     }
 }
+
+/* Discover Page Specific Styles */
+.discover-intro {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    max-width: 1500px;
+}
+
+.discover-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+/* Visit Message */
+.visit-message {
+    background-color: var(--background-light);
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Discover Content Layout */
+.discover-content {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.info-section, .testimonials {
+    background-color: var(--background-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.info-card {
+    margin-bottom: 2rem;
+}
+
+.info-card:last-child {
+    margin-bottom: 0;
+}
+
+.info-section h2, .testimonials h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Demographics Grid */
+.demographics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.demographic-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.demographic-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.demographic-item p {
+    font-weight: 600;
+    color: var(--accent-color);
+    margin: 0;
+}
+
+/* Lists */
+.info-card ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.info-card li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Testimonials */
+.testimonial {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-left: 4px solid var(--accent-color);
+}
+
+.testimonial-content p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.author {
+    text-align: right;
+}
+
+.author .name {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.author .business {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* Gallery Section */
+.gallery-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.gallery-container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.card figure {
+    margin: 0;
+    overflow: hidden;
+    height: 200px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card address {
+    font-style: normal;
+    padding: 0.75rem 1rem;
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--gray-light);
+    font-size: 0.9rem;
+}
+
+.card p {
+    padding: 1rem;
+    margin: 0;
+    color: var(--text-dark);
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.card button {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    padding: 0.75rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.card button:hover {
+    background-color: #d15a44;
+}
+
+.ethical-badge {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+/* Grid Layouts using Grid Template Areas */
+
+/* Small Screens (320px to 640px) */
+.gallery-container {
+    grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    grid-template-columns: 1fr;
+}
+
+.card:nth-child(1) { grid-area: card1; }
+.card:nth-child(2) { grid-area: card2; }
+.card:nth-child(3) { grid-area: card3; }
+.card:nth-child(4) { grid-area: card4; }
+.card:nth-child(5) { grid-area: card5; }
+.card:nth-child(6) { grid-area: card6; }
+.card:nth-child(7) { grid-area: card7; }
+.card:nth-child(8) { grid-area: card8; }
+
+/* Medium Screens (641px to 1024px) */
+@media (min-width: 641px) {
+    .gallery-container {
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Image hover effects for medium and large screens only */
+    .card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1) contrast(1.1);
+    }
+}
+
+/* Large Screens (1025px and above) */
+@media (min-width: 1025px) {
+    .discover-content {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+            "info gallery"
+            "testimonials gallery";
+        gap: 2.5rem;
+    }
+    
+    .info-section {
+        grid-area: info;
+    }
+    
+    .gallery-section {
+        grid-area: gallery;
+    }
+    
+    .testimonials {
+        grid-area: testimonials;
+    }
+    
+    .gallery-container {
+        grid-template-areas: 
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 .";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

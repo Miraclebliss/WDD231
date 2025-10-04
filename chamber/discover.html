@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Milagro | Milagro Chamber of Commerce</title>
+    <meta name="description" content="Discover ethical businesses in Milagro that support fair wages, safe working conditions, and inclusive hiring practices.">
+    <meta name="author" content="Iruka Nkechi Miracle">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Milagro Chamber of Commerce - Ethical Business Directory">
+    <meta property="og:description" content="Discover businesses in Milagro that support fair wages, safe working conditions, and inclusive hiring.">
+    <meta property="og:image" content="https://miraclebliss.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://miraclebliss.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+   
+    <!-- JavaScript -->
+    <script src="scripts/index.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Milagro Chamber of Commerce Logo">
+                </a>
+            </div>
+            
+            <nav>
+                <button id="hamburger-btn">&#9776;</button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="social">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://instagram.com" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="discover-main">
+        <h1>Discover Milagro</h1>
+        <p class="discover-intro">
+            Explore our vibrant community committed to ethical business and sustainable growth
+        </p>
+        <div id="visit-message" class="visit-message"></div>
+
+        <section class="discover-content">
+            <div class="info-section">
+                <div class="info-card">
+                    <h2>Local History and Culture</h2>
+                    <p>Milagro, meaning "miracle" in Spanish, was founded in 1992 by a group of visionary entrepreneurs who believed in creating prosperity through ethical practices. Our town grew around the principle that business success and community wellbeing are intertwined.</p>
+                    <p>Today, Milagro celebrates its rich cultural heritage through annual festivals, public art installations, and a thriving local arts scene. Our community takes pride in preserving historical architecture while embracing sustainable development.</p>
+                </div>
+
+                <div class="info-card">
+                    <h2>Demographic Data</h2>
+                    <div class="demographics-grid">
+                        <div class="demographic-item">
+                            <h3>Population</h3>
+                            <p>45,200 residents</p>
+                        </div>
+                        <div class="demographic-item">
+                            <h3>Median Age</h3>
+                            <p>38 years</p>
+                        </div>
+                        <div class="demographic-item">
+                            <h3>Median Household Income</h3>
+                            <p>$72,500</p>
+                        </div>
+                        <div class="demographic-item">
+                            <h3>Education</h3>
+                            <p>42% Bachelor's degree or higher</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h2>Business Climate</h2>
+                    <p>Milagro offers a uniquely supportive environment for ethical businesses. Our local government provides:</p>
+                    <ul>
+                        <li>Tax incentives for businesses with certified fair wage policies</li>
+                        <li>Grants for sustainable business practices</li>
+                        <li>Workforce development programs</li>
+                        <li>Networking opportunities with like-minded entrepreneurs</li>
+                    </ul>
+                    <p>The Milagro Chamber of Commerce actively promotes member businesses that demonstrate commitment to ethical employment, community engagement, and environmental responsibility.</p>
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <h2>Local Attractions & Ethical Businesses</h2>
+                <div class="gallery-container" id="attractions-gallery">
+                    <!-- Cards will be generated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <h2>Business Owner Testimonials</h2>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Choosing to locate my business in Milagro was the best decision I ever made. The Chamber's commitment to ethical practices created a supportive ecosystem where businesses thrive while doing good."</p>
+                        <div class="author">
+                            <p class="name">- Maria Rodriguez</p>
+                            <p class="business">Owner, Verde Botanicals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The resources provided by the Milagro Chamber helped us implement fair wage policies that actually improved our bottom line through reduced turnover and increased productivity."</p>
+                        <div class="author">
+                            <p class="name">- James Chen</p>
+                            <p class="business">CEO, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As a worker-owned cooperative, we found the perfect home in Milagro. The community understands and supports our business model, and the Chamber has connected us with customers who value ethical employment."</p>
+                        <div class="author">
+                            <p class="name">- The Team at</p>
+                            <p class="business">Community Print Collective</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Milagro Chamber of Commerce">
+                    </div>
+                    <p>35 Araromi Street, Onike Yaba</p>
+                    <p>info@milagrochamber.org</p>
+                    <p>(555) 901-2345</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="map-link">
+                    <a href="#">📍 Location</a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31712.5667138395!2d3.3847490000000002!3d6.512718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cf0b0d17593%3A0xe24227f4fdc8bc40!2s35%20Araromi%20St%2C%20Onike%2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1757837306466!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Stay Informed</h3>
+                    <p>Subscribe to our newsletter for updates on ethical business practices and community events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-base">
+                <p>&copy; <span id="currentyear"></span> Milagro Chamber of Commerce</p>
+                <p>Iruka Nkechi Miracle | WDD 231 Project</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+        // Auto-update year and last modified date
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>

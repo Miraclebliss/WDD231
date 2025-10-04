@@ -1,0 +1,68 @@
+{
+  "attractions": [
+    {
+      "id": 1,
+      "name": "Milagro Historic District",
+      "address": "100 Heritage Street",
+      "description": "Stroll through our beautifully preserved historic district featuring architecture from the late 1800s. Many buildings house ethical businesses that have been community pillars for generations.",
+      "image": "images/milagrodistrict.jpg",
+      "ethicalBusiness": true
+    },
+    {
+      "id": 2,
+      "name": "Prosperity Park",
+      "address": "450 Greenway Boulevard",
+      "description": "A 50-acre urban oasis with walking trails, community gardens, and playgrounds. The park is maintained using sustainable practices and employs local youth through fair-wage programs.",
+      "image": "images/prosperitypark.jpg",
+      "ethicalBusiness": true
+    },
+    {
+      "id": 3,
+      "name": "Ethical Commerce Museum",
+      "address": "789 Justice Avenue",
+      "description": "Explore the history of ethical business practices and their impact on communities. Interactive exhibits showcase Milagro's commitment to fair trade and worker rights.",
+      "image": "images/ethics-museum.webp",
+      "ethicalBusiness": true
+    },
+    {
+      "id": 4,
+      "name": "Farmers Market & Craft Co-op",
+      "address": "Town Square",
+      "description": "Open every Saturday year-round, featuring local organic produce and handmade goods from worker-owned cooperatives and small ethical businesses.",
+      "image": "images/farmers-market.webp",
+      "ethicalBusiness": true
+    },
+    {
+      "id": 5,
+      "name": "Riverwalk Trail",
+      "address": "Trailhead at 234 Riverside Drive",
+      "description": "A scenic 7-mile trail along the Milagro River with beautiful views and access to several ethical cafes and shops along the route.",
+      "image": "images/riverwalk-trail.webp",
+      "ethicalBusiness": false
+    },
+    {
+      "id": 6,
+      "name": "Community Arts Center",
+      "address": "567 Creativity Lane",
+      "description": "Hosting exhibitions, performances, and workshops with a focus on local artists. The center operates as a non-profit with fair compensation for all artists.",
+      "image": "images/arts-center.webp",
+      "ethicalBusiness": true
+    },
+    {
+      "id": 7,
+      "name": "Sustainable Business Hub",
+      "address": "890 Innovation Drive",
+      "description": "A co-working space and incubator exclusively for businesses committed to ethical practices, sustainability, and community benefit.",
+      "image": "images/business-hub.webp",
+      "ethicalBusiness": true
+    },
+    {
+      "id": 8,
+      "name": "Heritage Gardens",
+      "address": "345 Botanical Way",
+      "description": "Beautiful themed gardens showcasing native plants and sustainable gardening practices. The gardens employ individuals from underrepresented communities.",
+      "image": "images/heritage-gardens.webp",
+      "ethicalBusiness": true
+    }
+  ]
+}

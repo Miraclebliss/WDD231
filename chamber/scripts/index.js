@@ -309,3 +309,157 @@ document.addEventListener('DOMContentLoaded', function() {
     
     applicationData.innerHTML = html;
 });
+
+// DOM Content Loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Load attractions from JSON
+    loadAttractions();
+    
+    // Handle visit message
+    handleVisitMessage();
+});
+
+// Load attractions from JSON and create cards
+function loadAttractions() {
+    fetch('data/attractions.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const gallery = document.getElementById('attractions-gallery');
+            
+            data.attractions.forEach(attraction => {
+                const card = createCard(attraction);
+                gallery.appendChild(card);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading attractions:', error);
+            // Fallback: Create cards with placeholder data
+            createFallbackCards();
+        });
+}
+
+// Create individual card element
+function createCard(attraction) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    
+    const ethicalBadge = attraction.ethicalBusiness ? 
+        '<span class="ethical-badge">Ethical Business</span>' : '';
+    
+    card.innerHTML = `
+        <h3>${attraction.name}${ethicalBadge}</h3>
+        <figure>
+            <img src="${attraction.image}" alt="${attraction.name}" loading="lazy">
+        </figure>
+        <address>${attraction.address}</address>
+        <p>${attraction.description}</p>
+        <button class="learn-more">Learn More</button>
+    `;
+    
+    // Add event listener to button
+    const button = card.querySelector('.learn-more');
+    button.addEventListener('click', function() {
+        alert(`More information about ${attraction.name} would appear here. This could link to a detailed page with hours, contact information, and more about their ethical practices.`);
+    });
+    
+    return card;
+}
+
+// Fallback if JSON fails to load
+function createFallbackCards() {
+    const gallery = document.getElementById('attractions-gallery');
+    const fallbackData = [
+        {
+            name: "Milagro Historic District", 
+            address: "100 Heritage Street", 
+            description: "Stroll through our beautifully preserved historic district featuring architecture from the late 1800s.", 
+            image: "images/milagrodistrict.jpg",
+            ethicalBusiness: true
+        },
+        {
+            name: "Prosperity Park", 
+            address: "450 Greenway Boulevard", 
+            description: "A 50-acre urban oasis with walking trails, community gardens, and playgrounds.", 
+            image: "images/prosperitypark.jpg",
+            ethicalBusiness: true
+        },
+        {
+            name: "Ethical Commerce Museum", 
+            address: "789 Justice Avenue", 
+            description: "Explore the history of ethical business practices and their impact on communities.", 
+            image: "images/ethics-museum.webp",
+            ethicalBusiness: true
+        },
+        {
+            name: "Farmers Market & Craft Co-op", 
+            address: "Town Square", 
+            description: "Open every Saturday year-round, featuring local organic produce and handmade goods.", 
+            image: "images/farmers-market.webp",
+            ethicalBusiness: true
+        },
+        {
+            name: "Riverwalk Trail", 
+            address: "Trailhead at 234 Riverside Drive", 
+            description: "A scenic 7-mile trail along the Milagro River with beautiful views.", 
+            image: "images/riverwalk-trail.webp",
+            ethicalBusiness: false
+        },
+        {
+            name: "Community Arts Center", 
+            address: "567 Creativity Lane", 
+            description: "Hosting exhibitions, performances, and workshops with a focus on local artists.", 
+            image: "images/arts-center.webp",
+            ethicalBusiness: true
+        },
+        {
+            name: "Sustainable Business Hub", 
+            address: "890 Innovation Drive", 
+            description: "A co-working space and incubator for businesses committed to ethical practices.", 
+            image: "images/business-hub.webp",
+            ethicalBusiness: true
+        },
+        {
+            name: "Heritage Gardens", 
+            address: "345 Botanical Way", 
+            description: "Beautiful themed gardens showcasing native plants and sustainable practices.", 
+            image: "images/heritage-gardens.webp",
+            ethicalBusiness: true
+        }
+    ];
+    
+    fallbackData.forEach(attraction => {
+        const card = createCard(attraction);
+        gallery.appendChild(card);
+    });
+}
+
+// Handle visit message using localStorage
+function handleVisitMessage() {
+    const visitMessage = document.getElementById('visit-message');
+    const lastVisit = localStorage.getItem('lastVisit');
+    const currentTime = Date.now();
+    
+    if (!lastVisit) {
+        // First visit
+        visitMessage.textContent = "Welcome! Let us know if you have any questions about our ethical business community.";
+    } else {
+        const lastVisitTime = parseInt(lastVisit);
+        const timeDifference = currentTime - lastVisitTime;
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        
+        if (daysDifference === 0) {
+            visitMessage.textContent = "Back so soon! Awesome! We're glad you're continuing to explore Milagro.";
+        } else {
+            const dayText = daysDifference === 1 ? "day" : "days";
+            visitMessage.textContent = `You last visited ${daysDifference} ${dayText} ago. Welcome back to Milagro!`;
+        }
+    }
+    
+    // Store current visit time
+    localStorage.setItem('lastVisit', currentTime.toString());
+}
