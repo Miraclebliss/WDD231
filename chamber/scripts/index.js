@@ -219,7 +219,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const response = await fetch(myURL);
             if (response.ok) {
                 const data = await response.json();
-                console.log(data);
                 displayResults(data)
             } else {
                 throw Error(await response.text());
@@ -230,7 +229,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         //display the json data
         function displayResults(data) {
-            console.log('hello');
             myCity.innerHTML = data.name;
             myDescription.innerHTML = data.weather[0].description;
             myTemperature.innerHTML = `${data.main.temp}&deg;F`

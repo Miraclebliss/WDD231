@@ -1,0 +1,175 @@
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #E6E6E6;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2E5077;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: #2E5077;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4A7B9D;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    color: #2E5077;
+    margin: 1rem 0;
+}
+
+/* List Styles */
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Color Schema Styles */
+.color-swatch {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    min-width: 200px;
+}
+
+.primary-color {
+    background-color: #2E5077;
+}
+
+.secondary-color {
+    background-color: #E6E6E6;
+    color: #333333;
+    border: 1px solid #cccccc;
+}
+
+.accent-color {
+    background-color: #4A7B9D;
+}
+
+/* Highlight Text */
+.highlight {
+    background-color: #4A7B9D;
+    color: white;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+
+/* Wireframe Styles */
+.wireframe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.wireframe {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.wireframe h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2E5077;
+}
+
+.wireframe pre {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2E5077;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    .wireframe-container {
+        flex-direction: column;
+    }
+    
+    .color-swatch {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 0;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+}
