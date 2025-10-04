@@ -129,6 +129,20 @@ li {
     white-space: pre-wrap;
 }
 
+.wireframe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start; /* Allows items to have different heights */
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .wireframe-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
 /* Footer Styles */
 footer {
     background-color: #2E5077;
