@@ -1,0 +1,238 @@
+
+{
+  "issues": [
+    {
+      "id": "issue-001",
+      "type": "power",
+      "title": "Power Outage in Victoria Island",
+      "description": "Complete power outage affecting multiple buildings in the Victoria Island area. Reported by multiple residents. The outage started around 2 PM and is still ongoing.",
+      "location": {
+        "area": "Victoria Island",
+        "city": "Lagos"
+      },
+      "date": "2025-10-15T14:00:00Z",
+      "status": "reported",
+      "upvotes": 24,
+      "updates": [
+        {
+          "date": "2025-10-15T16:30:00Z",
+          "text": "Issue has been reported to Eko Electric. Awaiting response."
+        }
+      ]
+    },
+    {
+      "id": "issue-002",
+      "type": "traffic",
+      "title": "Major Traffic Jam on Third Mainland Bridge",
+      "description": "Severe traffic congestion on the Third Mainland Bridge due to an accident. Traffic is backed up for several kilometers. Avoid this route if possible.",
+      "location": {
+        "area": "Third Mainland Bridge",
+        "city": "Lagos"
+      },
+      "date": "2025-10-15T08:15:00Z",
+      "status": "in-progress",
+      "upvotes": 18,
+      "updates": [
+        {
+          "date": "2025-10-15T09:30:00Z",
+          "text": "Accident cleared but traffic still heavy. FRSC on scene directing traffic."
+        }
+      ]
+    },
+    {
+      "id": "issue-003",
+      "type": "flooding",
+      "title": "Flash Flooding in Ikeja",
+      "description": "Heavy rainfall has caused significant flooding in the Ikeja GRA area. Several roads are impassable. Residents advised to avoid low-lying areas.",
+      "location": {
+        "area": "Ikeja GRA",
+        "city": "Lagos"
+      },
+      "date": "2025-10-14T17:45:00Z",
+      "status": "in-progress",
+      "upvotes": 32,
+      "updates": [
+        {
+          "date": "2025-10-14T19:00:00Z",
+          "text": "LASEMA has been notified and is monitoring the situation."
+        },
+        {
+          "date": "2025-10-15T08:00:00Z",
+          "text": "Water levels receding but some areas still affected."
+        }
+      ]
+    },
+    {
+      "id": "issue-004",
+      "type": "sanitation",
+      "title": "Garbage Accumulation in Surulere",
+      "description": "Piles of uncollected garbage on Bode Thomas Street. The waste has been there for over a week and is causing environmental concerns.",
+      "location": {
+        "area": "Surulere",
+        "city": "Lagos"
+      },
+      "date": "2025-10-13T10:20:00Z",
+      "status": "reported",
+      "upvotes": 15
+    },
+    {
+      "id": "issue-005",
+      "type": "security",
+      "title": "Suspicious Activity Reported in Lekki Phase 1",
+      "description": "Residents have reported suspicious individuals loitering in the area, particularly in the evenings. Local security has been alerted.",
+      "location": {
+        "area": "Lekki Phase 1",
+        "city": "Lagos"
+      },
+      "date": "2025-10-12T19:30:00Z",
+      "status": "resolved",
+      "upvotes": 12,
+      "updates": [
+        {
+          "date": "2025-10-13T10:00:00Z",
+          "text": "Police patrol has been increased in the area."
+        },
+        {
+          "date": "2025-10-14T15:00:00Z",
+          "text": "No further incidents reported. Situation appears resolved."
+        }
+      ]
+    },
+    {
+      "id": "issue-006",
+      "type": "power",
+      "title": "Intermittent Power Supply in Yaba",
+      "description": "Frequent power fluctuations and outages in the Yaba area. Affecting businesses and residents. Reported to Ikeja Electric.",
+      "location": {
+        "area": "Yaba",
+        "city": "Lagos"
+      },
+      "date": "2025-10-11T09:15:00Z",
+      "status": "in-progress",
+      "upvotes": 28
+    },
+    {
+      "id": "issue-007",
+      "type": "traffic",
+      "title": "Road Construction Causing Delays on Apapa-Oshodi Expressway",
+      "description": "Ongoing road construction is causing significant traffic delays during peak hours. Commuters should seek alternative routes.",
+      "location": {
+        "area": "Apapa-Oshodi Expressway",
+        "city": "Lagos"
+      },
+      "date": "2025-10-10T07:00:00Z",
+      "status": "in-progress",
+      "upvotes": 21
+    },
+    {
+      "id": "issue-008",
+      "type": "flooding",
+      "title": "Drainage Blockage in Ajegunle",
+      "description": "Blocked drainage system causing water to overflow onto roads and into compounds after rainfall. Needs urgent attention.",
+      "location": {
+        "area": "Ajegunle",
+        "city": "Lagos"
+      },
+      "date": "2025-10-09T14:45:00Z",
+      "status": "reported",
+      "upvotes": 19
+    },
+    {
+      "id": "issue-009",
+      "type": "sanitation",
+      "title": "Illegal Dumping Site in Agege",
+      "description": "An illegal dumping site has emerged near the railway line. Creating health hazards and attracting pests.",
+      "location": {
+        "area": "Agege",
+        "city": "Lagos"
+      },
+      "date": "2025-10-08T11:30:00Z",
+      "status": "reported",
+      "upvotes": 14
+    },
+    {
+      "id": "issue-010",
+      "type": "security",
+      "title": "Street Lights Not Working in Gbagada",
+      "description": "Multiple street lights out in the Gbagada area, creating security concerns after dark. Reported to appropriate authorities.",
+      "location": {
+        "area": "Gbagada",
+        "city": "Lagos"
+      },
+      "date": "2025-10-07T18:20:00Z",
+      "status": "in-progress",
+      "upvotes": 16
+    },
+    {
+      "id": "issue-011",
+      "type": "power",
+      "title": "Transformer Fault in Mushin",
+      "description": "A faulty transformer is affecting power supply to several streets in the Mushin area. Repair team has been dispatched.",
+      "location": {
+        "area": "Mushin",
+        "city": "Lagos"
+      },
+      "date": "2025-10-06T13:10:00Z",
+      "status": "in-progress",
+      "upvotes": 22
+    },
+    {
+      "id": "issue-012",
+      "type": "traffic",
+      "title": "Potholes Causing Traffic on Lagos-Ibadan Expressway",
+      "description": "Multiple large potholes on the Lagos-Ibadan Expressway near Berger are causing traffic slowdowns and vehicle damage.",
+      "location": {
+        "area": "Lagos-Ibadan Expressway",
+        "city": "Lagos"
+      },
+      "date": "2025-10-05T10:05:00Z",
+      "status": "reported",
+      "upvotes": 27
+    },
+    {
+      "id": "issue-013",
+      "type": "flooding",
+      "title": "Erosion Threat in Badagry",
+      "description": "Soil erosion threatening properties along the coastal area. Urgent intervention needed to prevent further damage.",
+      "location": {
+        "area": "Badagry",
+        "city": "Lagos"
+      },
+      "date": "2025-10-04T16:40:00Z",
+      "status": "reported",
+      "upvotes": 11
+    },
+    {
+      "id": "issue-014",
+      "type": "sanitation",
+      "title": "Public Toilet Facility in Disrepair in Oshodi",
+      "description": "The public toilet facility at Oshodi market is in poor condition, creating sanitation issues for traders and visitors.",
+      "location": {
+        "area": "Oshodi",
+        "city": "Lagos"
+      },
+      "date": "2025-10-03T12:25:00Z",
+      "status": "reported",
+      "upvotes": 13
+    },
+    {
+      "id": "issue-015",
+      "type": "security",
+      "title": "Abandoned Vehicle Causing Concern in Anthony",
+      "description": "An abandoned vehicle has been parked in the same spot for over two weeks, raising security concerns among residents.",
+      "location": {
+        "area": "Anthony",
+        "city": "Lagos"
+      },
+      "date": "2025-10-02T09:50:00Z",
+      "status": "resolved",
+      "upvotes": 9,
+      "updates": [
+        {
+          "date": "2025-10-05T14:00:00Z",
+          "text": "Vehicle has been removed by authorities. Issue resolved."
+        }
+      ]
+    }
+  ]
+}

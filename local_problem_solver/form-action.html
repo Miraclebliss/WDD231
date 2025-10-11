@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Issue Report Confirmation - Localized Problem Solver">
+    <meta name="author" content="Localized Problem Solver Team">
+    <title>Report Submitted | Localized Problem Solver</title>
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Localized Problem Solver Logo">
+                <h1>Localized Problem Solver</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="report.html">Report Issue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Issue Report Submitted</h1>
+                <p>Thank you for helping improve your community</p>
+            </div>
+        </section>
+
+        <section class="confirmation-section">
+            <div class="container">
+                <div class="confirmation-card">
+                    <div class="success-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    
+                    <h2>Thank You for Your Report</h2>
+                    <p>Your issue has been successfully submitted and will be reviewed by our team. Here's a summary of your report:</p>
+                    
+                    <div class="report-summary" id="report-summary">
+                        <!-- Report details will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="next-steps">
+                        <h3>What Happens Next?</h3>
+                        <ol>
+                            <li>Your report will be verified and added to our issue map</li>
+                            <li>Other community members can view and upvote your report</li>
+                            <li>We'll work with relevant authorities to address the issue</li>
+                            <li>You'll receive updates if you requested notifications</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <a href="index.html" class="btn btn-primary">Return to Home</a>
+                        <a href="report.html" class="btn btn-secondary">Report Another Issue</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Localized Problem Solver</h3>
+                    <p>Empowering communities to solve local issues together.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="report.html">Report Issue</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@localizedproblemsolver.org</p>
+                    <p>Phone: +2347036310477</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Localized Problem Solver. All rights reserved.</p>
+                <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demonstration</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const reportSummary = document.getElementById('report-summary');
+            
+            // Display form data
+            if (urlParams.toString()) {
+                let summaryHTML = `
+                    <div class="summary-item">
+                        <strong>Issue Type:</strong> ${formatIssueType(urlParams.get('issue-type') || 'Not specified')}
+                    </div>
+                    <div class="summary-item">
+                        <strong>Title:</strong> ${urlParams.get('issue-title') || 'Not specified'}
+                    </div>
+                    <div class="summary-item">
+                        <strong>Description:</strong> ${urlParams.get('issue-description') || 'Not specified'}
+                    </div>
+                    <div class="summary-item">
+                        <strong>Location:</strong> ${urlParams.get('issue-area') || 'Not specified'}, ${urlParams.get('issue-city') || 'Not specified'}
+                    </div>
+                    <div class="summary-item">
+                        <strong>Date Observed:</strong> ${formatDate(urlParams.get('issue-date') || 'Not specified')}
+                    </div>
+                    <div class="summary-item">
+                        <strong>Urgency:</strong> ${formatUrgency(urlParams.get('urgency') || 'Not specified')}
+                    </div>
+                `;
+                
+                if (urlParams.get('contact-name')) {
+                    summaryHTML += `
+                        <div class="summary-item">
+                            <strong>Reported by:</strong> ${urlParams.get('contact-name')}
+                        </div>
+                    `;
+                }
+                
+                reportSummary.innerHTML = summaryHTML;
+            } else {
+                reportSummary.innerHTML = '<p>No report data found. Please submit a report first.</p>';
+            }
+            
+            // Helper functions
+            function formatIssueType(type) {
+                const typeMap = {
+                    'power': 'Power Outage',
+                    'traffic': 'Traffic Problem',
+                    'flooding': 'Flooding',
+                    'sanitation': 'Sanitation',
+                    'security': 'Security Concern',
+                    'other': 'Other'
+                };
+                return typeMap[type] || type;
+            }
+            
+            function formatDate(dateString) {
+                if (dateString === 'Not specified') return dateString;
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                return new Date(dateString).toLocaleDateString(undefined, options);
+            }
+            
+            function formatUrgency(urgency) {
+                const urgencyMap = {
+                    'low': 'Low - Minor inconvenience',
+                    'medium': 'Medium - Affecting daily activities',
+                    'high': 'High - Safety risk or major disruption'
+                };
+                return urgencyMap[urgency] || urgency;
+            }
+        });
+    </script>
+</body>
+</html>
