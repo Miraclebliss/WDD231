@@ -1,4 +1,4 @@
-// js/main.js
+// script/main.js
 import { fetchIssues } from './data.js';
 import { setupMap, addMarkerToMap } from './map.js';
 import { getStoredFilter, setStoredFilter } from './storage.js';
